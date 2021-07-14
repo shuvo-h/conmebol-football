@@ -281,8 +281,21 @@ footer{
         grid-row-gap: 10px;
     }
     /* Responsive Extra part 1 End  */
-    /* Responsive Extra part 2 Start  */
-    /* Responsive Extra part 2 End  */
+    /* Responsive Latest Match Highlight Start  */
+    .highlight{
+        margin: 15px 30px;
+    }
+    .video-playlist{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-row-gap: 20px;
+    }
+    .flash-player{
+        height: 215px;
+        width: 340px;
+        border: 1px solid;
+    }
+    /* Responsive Latest Match Highlight End  */
     /* Responsive Footer Start   */
     /* Responsive Footer End   */
 }
@@ -311,11 +324,60 @@ footer{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(6, 1fr);
     }
-    
+    /* Responsive Media Galary Start */
+    .football-album{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-evenly;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+    /* Responsive Media Galary end */
+    /* Responsive Latest Match Highlight Start  */
+    .highlight{
+        margin: 15px 30px;
+    }
+    .video-playlist{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-row-gap: 20px;
+    }
+    .flash-player{
+        height: 315px;
+        width: 700px;
+        border: 1px solid;
+        
+    }
+    /* Responsive Latest Match Highlight End  */
+
+
+}
+/* Responsive For iPad Screen  */
+@media only screen and (min-width:992px) and (max-width:1312px) {
+    .heading-banner{
+        width: 100%;
+    }
+    .heading-button{
+        padding-left: 80px;
+        padding-top: 80px;
+    }
+    .ball img{
+        left: 805px;
+        bottom: 1010px;
+        transition: transform 1s ease-out 0.1s;
+    }
+    .players{
+        margin: 70px 100px;
+        grid-template-columns: repeat(2, 1fr);
+
+   
+    }
+
+    .highlight{
+        margin: 70px 80px;
+    }
+    .flash-player{
+        height: 250px;
+        width: 100%;
+    }
 }
 
-@media only screen and (min-width:992px) {
-    
-}
-
-/* Responsive For Dextop or Heighr Screen  */
