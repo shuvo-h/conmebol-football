@@ -7,7 +7,7 @@ body{
     margin: 0px;
 }
 
-/* Header Start   */
+/* Header Style Start   */
 .heading-banner{
     height: 603px;
     display: grid;
@@ -17,14 +17,17 @@ body{
 }
 .heading-button{
     padding-left: 156px;
-    padding-top: 207px;
+    padding-top: 100px;
 }
 .heading h1{
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
     line-height: 80px; 
+    margin-bottom: 17px;
 }
+
+/* Header Button Style  */
 .submit{
     padding: 0px;
     border: none;
@@ -40,6 +43,12 @@ body{
     margin: 0px;
     font-size: 14px;
 }
+
+.submit a:hover{
+    background-color: rgb(208, 23, 23);
+}
+
+/* Header Banner Style  */
 .heading-banner:hover .boy img{
     transform: rotate(-10deg);
     transform-origin: left bottom;
@@ -63,9 +72,9 @@ body{
 .heading-banner:hover .ball img{
     transform: translate(90px,-210px);
 }
+/* Header Style End   */
 
-/* Header End   */
-/* Player's Profile Start  */
+/* Player's Profile Style Start  */
 .players{
     margin: 70px 180px;
     display: grid;
@@ -92,8 +101,9 @@ body{
     color: #6C6C6C;
 }
 
-/* Player's Profile End  */
-/* Media Galary Start */
+/* Player's Profile Style End  */
+
+/* Media Galary Style Start */
 .album{
     margin: 70px 180px;
 }
@@ -139,37 +149,48 @@ body{
     transform: scale(1.4);
 }
 
-/* Media Galary End */
+/* Media Galary Style End */
 
-/* Latest Match Highlight Start  */
-.highlight{
+/* Latest Football Match video Style Start  */
+.football-video{
     margin: 70px 180px;
 }
 .video-playlist{
-    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 20px;
 }
+
+/* Playlist Design  */
 .playlist{
     height: 315px;
     overflow-x: hidden;
     overflow-y: scroll;
-    /* border: 1px solid; */
     box-shadow: 0px 0px 10px 10px goldenrod;
+    padding: 0px 10px;
+}
+.playlist h4{
+    background-color: lightslategray;
+    margin: 5px 0px;
+    border-radius: 5px;
 }
 .playlist a{
     display: block;
     text-decoration: none;
-    padding: 0px 10px;
+    
+    background-color: lightgreen;
+    margin: 2px 0px;
+    color: black;
 }
 .playlist a:hover{
-    background-color: lightgreen;
+    background-color: lime;
+    
 }
 .playlist a:visited{
     background-color: rgb(6, 62, 146);
 }
 
+/* Player Design  */
 .flash-player{
     height: 315px;
     width: 560px;
@@ -179,12 +200,13 @@ body{
 .video-player{
     height: 100%;
     width: 100%;
-    background-image: url(../images/Highlight/football-Highlight-videos.jpg);
+    background-image: url(../images/football-video/player.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-/* Latest Match Highlight End  */
-/* Footer Start   */
+/* Latest football Match video End  */
+
+/* Footer Style Start   */
 footer{
     display: flex;
     flex-direction: column;
@@ -207,10 +229,21 @@ footer{
     color: #10437A;
     display: block;
 }
+
+/* Footer Media Style  */
 .media{
     font-size: 32px;
     color: #969BAB;
     text-align: center;
+}
+.instagram{
+    color: rgb(185, 46, 46);
+}
+.twitter{
+    color: rgb(65, 163, 224);
+}
+.youtube{
+    color: rgb(226, 31, 31);
 }
 .copyright{
     margin: 0px;
@@ -218,13 +251,15 @@ footer{
     text-align: center;
     margin-bottom: 10px;
 }
-/* Footer End   */
+/* Footer Style End  */
 
-/* Responsive Media Query */
+/* .................................
+    Responsive Media Query Style 
+...................................*/
 
 /* Responsive For Mobile  */
 @media only screen and (max-width:688px) {
-    /* Responsive Header Style Start  */
+    /* Responsive Header Style for Mobile */
     .heading-banner{
         display: flex;
         flex-direction: column;
@@ -255,8 +290,8 @@ footer{
         left: 220px;
         bottom: 250px;
     }
-    /* Responsive Header Style End  */
-    /* Responsive Player's Profile Start   */
+   
+    /* Responsive Player's Profile Style for Mobile   */
     .players{
         margin: 25px 10px;
         display: grid;
@@ -270,8 +305,8 @@ footer{
     .player-name{
         margin: 10px 0px;
     }
-    /* Responsive Player's Profile End   */
-    /* Responsive Media Galary Start  */
+   
+    /* Responsive Media Galary Style for Mobile  */
     .album{
         margin: 50px 50px;
     }
@@ -280,9 +315,9 @@ footer{
         grid-template-rows: repeat(3, 1fr);
         grid-row-gap: 10px;
     }
-    /* Responsive Extra part 1 End  */
-    /* Responsive Latest Match Highlight Start  */
-    .highlight{
+    
+    /* Responsive Latest Football Match video for Mobile  */
+    .football-video{
         margin: 15px 30px;
     }
     .video-playlist{
@@ -295,13 +330,11 @@ footer{
         width: 340px;
         border: 1px solid;
     }
-    /* Responsive Latest Match Highlight End  */
-    /* Responsive Footer Start   */
-    /* Responsive Footer End   */
 }
 
-/* Responsive For Tablet  */
+/* Responsive Style For Tablet  */
 @media only screen and (min-width:688px) and (max-width:992px) {
+    /* Responsive Header Style for Tablet  */
     .heading-banner{
         height: 603px;
         width: 100%;
@@ -319,21 +352,22 @@ footer{
         left: 630px;
         bottom: 730px;
     }
+
+    /* Responsive Player's Profile for Tablet */
     .players{
         margin: 50px 50px;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(6, 1fr);
     }
-    /* Responsive Media Galary Start */
+    /* Responsive Media Galary for Tablet */
     .football-album{
         grid-template-columns: repeat(2, 1fr);
         justify-content: space-evenly;
         grid-column-gap: 10px;
         grid-row-gap: 10px;
     }
-    /* Responsive Media Galary end */
-    /* Responsive Latest Match Highlight Start  */
-    .highlight{
+    /* Responsive Latest Match football-video for Tablet  */
+    .football-video{
         margin: 15px 30px;
     }
     .video-playlist{
@@ -347,12 +381,10 @@ footer{
         border: 1px solid;
         
     }
-    /* Responsive Latest Match Highlight End  */
-
-
 }
 /* Responsive For iPad Screen  */
 @media only screen and (min-width:992px) and (max-width:1312px) {
+    /* Responsive Header Style For iPad  */
     .heading-banner{
         width: 100%;
     }
@@ -365,14 +397,14 @@ footer{
         bottom: 1010px;
         transition: transform 1s ease-out 0.1s;
     }
+
+    /* Responsive Player's Profile Style for iPad  */
     .players{
         margin: 70px 100px;
         grid-template-columns: repeat(2, 1fr);
-
-   
     }
-
-    .highlight{
+    /* Responsive Latest Football Match video Style for iPad  */
+    .football-video{
         margin: 70px 80px;
     }
     .flash-player{
