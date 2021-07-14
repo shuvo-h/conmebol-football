@@ -92,11 +92,55 @@ body{
     color: #6C6C6C;
 }
 
-
-
 /* Player's Profile End  */
-/* Extra part 1 Start  */
-/* Extra part 1 End  */
+/* Media Galary Start */
+.album{
+    margin: 70px 180px;
+}
+.football-album{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    grid-column-gap: 10px;
+}
+.album-frame{
+    height: 200px;
+    width: 300px;
+    border: 1px solid;
+    position: relative;
+    overflow: hidden;
+}
+
+.image img{
+    height: 100%;
+    width: 100%;
+    transition: transform 1s ease-in-out;
+}
+.image-details{
+    position: absolute;
+    width: 300px;
+    top: 0px;
+    display: none;
+    background-color: rgba(245, 222, 179, 0.3);
+}
+.image-details h3{
+    margin: 10px 2px;
+    background-color: yellowgreen;
+    text-align: center;
+}
+.image-details p{
+    text-align: center;
+    
+}
+.album-frame:hover .image-details{
+    display: block;
+}
+.album-frame:hover .image img{
+    transform: scale(1.4);
+}
+
+/* Media Galary End */
+
 /* Extra part 2 Start  */
 /* Extra part 2 End  */
 /* Footer Start   */
